@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -49,11 +50,11 @@ dependencies {
     implementation 'ru.terrakok.cicerone:cicerone:5.0.0'
     implementation "com.arello-mobile:moxy:$moxyVersion"
     implementation "com.arello-mobile:moxy-android:$moxyVersion"
-    annotationProcessor "com.arello-mobile:moxy-compiler:$moxyVersion"
-    annotationProcessor "com.arello-mobile:moxy-compiler:$moxyVersion"
+    kapt "com.arello-mobile:moxy-compiler:$moxyVersion"
+    kapt "com.arello-mobile:moxy-compiler:$moxyVersion"
 
     implementation "androidx.room:room-runtime:$room_version"
-    annotationProcessor "androidx.room:room-compiler:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
 
     // optional - RxJava2 support for Room
     implementation "androidx.room:room-rxjava2:$room_version"
