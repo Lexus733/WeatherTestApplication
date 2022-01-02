@@ -21,8 +21,8 @@ object RetrofitService {
 interface WeatherApi {
     @GET("onecall")
     fun loadCity(
-        @Query("lat") lat: Double,
-        @Query("lon") lon: Double,
+        @Query("lat") lat: String,
+        @Query("lon") lon: String,
         @Query("exclude") exclude: String,
         @Query("appid") appid: String,
         @Query("units") units: String

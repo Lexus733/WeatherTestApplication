@@ -25,7 +25,7 @@ data class WeatherDataDay(
     val wind_gust: Double,
     val weather: List<Weather>,
     val clouds: Int,
-    val pop: Int,
+    val pop: Double,
     val rain: Double,
     val uvi: Double
 )
